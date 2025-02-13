@@ -3,26 +3,33 @@
 <head>
   <title>Lab 2</title>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width,initial-scale=1.0,shrink-to-fit=no" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no" />
   <link rel="stylesheet" media="screen" href="css/meyersreset-and-normalize-form.css" />
   <link rel="stylesheet" media="screen" href="css/screen.css" />
 </head>
 <body>
-  <form method="post" action="#NULL" autocomplete="on">
+  <form method="post" action="#" autocomplete="on">
     <fieldset>
       <legend>Personal Info</legend>
-    <div>
-      <label><input type="email" name="email_field" placeholder="email here" required></label>
-    </div>
-    <div>
-      <label><input type="tel" name="phone_field" placeholder="phone number" required></label>
-    </div>
-    <div>
-      <label><input type="date" name="Date Of Birth" value="2025-02-08"</label>
-    </div>
-    <div>
-      <input type="submit" value="Submit Form">
-    </div>
+
+      <div>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email_field" placeholder="email here" required>
+      </div>
+
+      <div>
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone_field" placeholder="phone number" required>
+      </div>
+
+      <div>
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" name="dob" value="2025-02-08" required>
+      </div>
+
+      <div>
+        <input type="submit" value="Submit Form">
+      </div>
     </fieldset>
   </form>
 </body>
